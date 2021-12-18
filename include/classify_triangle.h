@@ -1,6 +1,8 @@
 #if !defined(TRIANGLE_CLASSIFIER_H)
 #define TRIANGLE_CLASSIFIER_H
 
+#include <stdexcept>
+
 namespace classify_triangle {
 /**
  * @brief Representation for the type of triangle.

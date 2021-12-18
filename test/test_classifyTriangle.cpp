@@ -23,7 +23,7 @@ TEST(classifyTriangle, test_isosceles_order) {
 /// @test Test that scalene triangles are properly identified.
 TEST(classifyTriangle, test_scalene) {
   classify_triangle::TriangleType result =
-      classify_triangle::classifyTriangle(1.0, 0.25, 1.5);
+      classify_triangle::classifyTriangle(3.0, 4.0, 5.0);
   ASSERT_EQ(result, classify_triangle::TriangleType::SCALENE);
 }
 
