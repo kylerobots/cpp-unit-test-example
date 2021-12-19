@@ -36,7 +36,7 @@ if(BUILD_TESTING)
     GIT_TAG main
   )
   FetchContent_MakeAvailable(googletest)
-  # After Google Test is available, it still needs included in tehe project.
+  # After Google Test is available, it still needs included in the project.
   include(GoogleTest)
   # Create the testing executable.
   add_executable(test_classifyTriangle
