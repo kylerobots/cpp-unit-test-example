@@ -6,6 +6,12 @@ project(cpp_unit_test_example
 )
 
 set(CMAKE_CXX_STANDARD 11)
+include(CTest)
+# If testing, include coverage flags when compiling.
+if(BUILD_TESTING)
+  add_compile_options("--coverage")
+  add_link_options("--coverage")
+endif(BUILD_TESTING)
 
 add_library(triangle_classifier
   SHARED
@@ -23,9 +29,6 @@ target_link_libraries(example
   triangle_classifier
 )
 
-### UNIT TESTING WITH GOOGLE TEST ###
-# This also enables testing for this package.
-include(CTest)
 # Only do all the testing if requested (i.e. BUILD_TESTING=ON). Default is ON.
 if(BUILD_TESTING)
   # Use FetchContent to retrieve the Google Test source code.
