@@ -1,0 +1,16 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create Coverage",
+      "type": "shell",
+      "group": "test",
+      "command": "gcovr -r .. --filter \\.\\./src/ --html --html-details -o report.html --exclude-unreachable-branches --exclude-throw-branches .",
+      "options": {
+        "cwd": "${workspaceFolder}/build"
+      }
+    }
+  ]
+}
