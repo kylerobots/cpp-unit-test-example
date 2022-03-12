@@ -2,7 +2,7 @@
 
 #include "classify_triangle.h"
 
-int main(int, char**) {
+auto main(int argc, char** argv) -> int {
   classify_triangle::TriangleType type =
       classify_triangle::classifyTriangle(1.0, 1.0, 1.0);
   switch (type) {

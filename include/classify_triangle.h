@@ -19,7 +19,7 @@ enum TriangleType { ISOSCELES, EQUILATERAL, SCALENE };
  * @param side3 The length of the third side of the triangle.
  * @return TriangleType The type of triangle with the given side lengths.
  * */
-TriangleType classifyTriangle(double side1, double side2, double side3);
+auto classifyTriangle(double side1, double side2, double side3) -> TriangleType;
 }  // namespace classify_triangle
 
 #endif  // TRIANGLE_CLASSIFIER_H
